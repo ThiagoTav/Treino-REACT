@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import HellWorld from './components/HelloWorld';
+import Frase from './components/Frase';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
+const nome = 'Maria'
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>Testando CSS</h1>
+  <Frase /> 
+  <SayMyName name="Thiago"/>
+  <SayMyName name="Matheus"/>
+  <SayMyName name={nome}/>
+  <HellWorld />
+  <Pessoa nome="Thiago" idade="28" profissao="programador"
+    foto = "https://via.placeholder.com/150"
+  />
     </div>
   );
 }
