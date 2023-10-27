@@ -1,11 +1,17 @@
+import Item from "./Item"
+
+
 function List() {
     return(
-        <div>
+        <>
             <h1>Minha Lista</h1>
             <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
+                <Item marca="Ferrari" ano_lançamento={1985} />
+                <Item marca="Volkswagen" ano_lançamento={1964} />
+                <Item marca="Honda" ano_lançamento={1990} />
             </ul>
-        </div>
+        </>
     )
 }
+
+export default List
