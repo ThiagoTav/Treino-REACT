@@ -4,6 +4,8 @@ import Frase from './components/Frase';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import List from './components/list';
+import Evento from './components/Eventos';
+import Form from './components/form';
 
 
 function App() {
@@ -11,16 +13,10 @@ const nome = 'Maria'
 
   return (
     <div className="App">
-    <h1>Testando CSS</h1>
-  <Frase /> 
-  <SayMyName name="Thiago"/>
-  <SayMyName name="Matheus"/>
-  <SayMyName name={nome}/>
-  <HellWorld />
-  <Pessoa nome="Thiago" idade="28" profissao="programador"
-    foto = "https://via.placeholder.com/150"
-  />
-  <List />
+    <h1>Testando Eventos</h1>
+    <Evento numero="1"/>
+    <Evento numero="2"/>
+    <Form />
     </div>
   );
 }
